@@ -1,0 +1,323 @@
+/*....... Global Style CSS.....*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family:"poppins",sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* CSS for Navbar and Headings*/
+header{
+  background-color:#0d1b2a ;
+  color:white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  width: 90%;
+  margin: auto;
+
+}
+nav .logo{
+  font-size: 1.5rem;
+  font-weight: 600;
+
+}
+.menu-toggle{
+   font-size: 20px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+
+}
+nav ul li a:hover{
+  color: #ffb703;
+}
+/*====Animation on the LOGO=========*/
+.logo {
+  width: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #fff;
+  animation: typing 4s steps(17) infinite;
+}
+
+@keyframes typing {
+   0% { width: 0ch; }         /* start typing */
+  60% { width: 17ch; }       /* total characters = 17 (Robin's Portfolio) */
+  80% { width: 17ch; }       /* small pause at end */
+  100% { width: 0ch; }       /* reset back to start */
+}
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+
+/*========Hero Section=================*/
+.hero{
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #e0e1dd;
+
+}
+.hero img{
+  border-radius: 10%;
+  margin-top: 20px;
+  border: 2px solid #0d1b2a;
+  transition: transform 0.3s;
+}
+.hero img:hover{
+  transform: scale(2.05);
+}
+/* =====Section Headings===================*/
+section h2{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0d1b2a;
+}
+/*====About Section======================*/
+#about {
+  background-color: white;
+  padding:60px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/*============== Skills Sections=================*/
+#skills {
+  background:#e0e1dd;
+  padding: 60px 20px;
+  
+}
+#skills ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+}
+#skills li{
+  background-color: #0d1b2a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+#skills li:hover{
+  background-color: #686262;
+}
+/*================Project Section==================*/
+#projects{
+  background-color: white;
+  padding: 60px 20px;
+}
+.project{
+  display: grid;
+  background-color: #f0f0f0;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.project:hover{
+  transform: scale(1.05);
+}
+
+/*===============Contact Section==============*/
+#contact{
+  background-color: #e0e1dd;
+  padding: 60px 20px;
+  
+}
+.form-data{
+  background-color: #ccc;
+  width:400px;
+  height: 580px;
+  border-radius: 20px;
+
+}
+
+form{
+  max-width: 200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input,textarea{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+button{
+  background-color: #0d1b2a;
+  color: white;
+  padding: 10px;
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+   transition:background-color 0.3s;
+   
+}
+button:hover{
+  background-color: #ffb703;
+  color:black;
+}
+
+/*===========Footer Section========*/
+footer{
+  background-color: #0d1b2a;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* For Tablets (max width: 992px) */
+@media (max-width: 992px) {
+  nav ul {
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 40px 10px;
+  }
+
+  .project {
+    max-width: 90%;
+  }
+}
+
+
+.menu-checkbox {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/* Hide nav links initially */
+#nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+
+/* For Mobile Devices (max width: 600px) */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+    
+  }
+  .hero{
+    padding: 160px 80px;
+  }
+
+  .hero img {
+    width: 150px;
+  }
+
+  section {
+
+    padding: 30px 10px;
+  }
+  #about{
+  padding: 170px 40px;
+}
+#skills{
+  padding:170px 40px;
+}
+#projects{
+  padding:170px 40px;
+}
+#contact{
+  padding:170px 40px;
+}
+
+  #skills ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    margin: 15px 0;
+    padding: 15px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  button {
+    padding: 8px;
+  }
+ .menu-toggle {
+    display: block;
+    position: absolute;
+    background-color: #ffb703;
+    border-radius: 4px;
+    right: 20px;
+    
+    
+  
+  }
+  
+
+  #nav-links {
+    display: none;
+    flex-direction: row;
+    background: #0d1b2a;
+    width: 100%;
+    padding: 10px 0;
+    
+    
+  }
+
+  /* CSS Magic — when checkbox is checked */
+  .menu-checkbox:checked + .menu-toggle + #nav-links {
+    display: flex;
+  }
+
+}
