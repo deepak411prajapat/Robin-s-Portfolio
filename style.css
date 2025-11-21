@@ -298,7 +298,7 @@ footer{
     position: absolute;
     background-color: #ffb703;
     border-radius: 4px;
-    right: 20px;
+    right: 0vh;
     
     
   
@@ -321,3 +321,4 @@ footer{
   }
 
 }
+
