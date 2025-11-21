@@ -295,10 +295,10 @@ footer{
   }
  .menu-toggle {
     display: block;
-    position: absolute;
+    position: relative;
     background-color: #ffb703;
     border-radius: 4px;
-    right: 0vh;
+    
     
     
   
@@ -321,4 +321,5 @@ footer{
   }
 
 }
+
 
