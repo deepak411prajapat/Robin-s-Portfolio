@@ -309,7 +309,7 @@ footer{
     display: none;
     flex-direction: row;
     background: #0d1b2a;
-    width: 100%;
+    width: 90%;
     padding: 10px 0;
     
     
@@ -321,6 +321,7 @@ footer{
   }
 
 }
+
 
 
 
