@@ -30,17 +30,17 @@ The objective of this portfolio is to represent Robin’s professional journey, 
 
 🔥 Technologies Used
 
-Technology                  	Purpose
+Technology                        	Purpose
 
-HTML5	                    Website structure
+HTML5	                         Website structure
 
-CSS3	                   Styling, layout, animations & responsiveness
+CSS3	                        Styling, layout, animations & responsiveness
 
-JavaScript	             Interactivity and dynamic features
+JavaScript	                  Interactivity and dynamic features
 
-Media Queries	           Mobile-friendly experience
+Media Queries	              Mobile-friendly experience
 
-Git & GitHub	           Version control and collaboration
+Git & GitHub	               Version control and collaboration
 
 🚀 Website Features
 
